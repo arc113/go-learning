@@ -4,7 +4,12 @@ import "fmt"
 
 func main() {
 	a, b := "First", "Second"
-	var c, d string = "Third", "Fourth"
+	//var c, d string
+	fmt.Println(swap(a, b))
+}
 
-	fmt.Println(a, b, c, d)
+func swap(a, b string) (c, d string) {
+	c = b
+	d = a
+	return // Naked Return
 }
